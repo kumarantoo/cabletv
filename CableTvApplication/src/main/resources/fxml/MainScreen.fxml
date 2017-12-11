@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-background-color 0xccedffff?>
+<?scenebuilder-preview-i18n-resource ../res_bundles/cabletv_generic_TAMIL.properties?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="571.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.cabletv.app.controllers.LoginController">
+  <children>
+    <Button fx:id="loginButton" layoutX="145.0" layoutY="280.0" onAction="#handleButtonAction"  prefHeight="38.0" prefWidth="101.0" text="LOGIN" textFill="BLACK" />
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Label layoutX="106.0" layoutY="136.0" prefHeight="38.0" prefWidth="90.0" text="UserName" />
+    <Label layoutX="105.0" layoutY="199.0" prefHeight="38.0" prefWidth="90.0" text="Password" />
+    <TextField fx:id="userName" layoutX="216.0" layoutY="141.0" prefHeight="29.0" prefWidth="200.0" />
+    <Button layoutX="304.0" layoutY="280.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="101.0" text="RESET" />
+    <PasswordField fx:id="password" layoutX="216.0" layoutY="203.0" prefHeight="29.0" prefWidth="200.0" />
+    <VBox id="VBox" alignment="CENTER" layoutX="53.0" layoutY="23.0" prefWidth="456.0" spacing="5.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" prefWidth="497.0" spacing="5.0">
+          <children>
+            <ImageView fitHeight="108.70367286135821" fitWidth="376.28192138671875" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../images/banner_Login.jpg" />
+              </image>
+            </ImageView>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../styles/Styles.css" />
+  </stylesheets>
+</AnchorPane>

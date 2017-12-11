@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-preview-i18n-resource ../res_bundles/cabletv_generic_TAMIL.properties?>
+
+<AnchorPane id="AnchorPane" minWidth="582.0" prefHeight="527.0" prefWidth="718.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.cabletv.app.controllers.AdminMenuController">
+  <children>
+    <Label alignment="CENTER" layoutX="182.0" layoutY="14.0" prefHeight="80.0" prefWidth="281.0" text="Admin Home">
+      <font>
+        <Font size="30.0" />
+      </font>
+    </Label>
+    <Button fx:id="logoutButton" layoutX="562.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefWidth="65.0" text="Logout" />
+    <MenuBar layoutX="14.0" layoutY="14.0" prefWidth="133.0" useSystemMenuBar="false">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Label alignment="CENTER" layoutX="227.0" layoutY="143.0" prefHeight="27.0" prefWidth="207.0" text="Cutomer Operations">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Button fx:id="adduser" contentDisplay="CENTER" ellipsisString="" layoutX="42.0" layoutY="201.0" mnemonicParsing="false" onAction="#addAppUsers" prefHeight="31.0" prefWidth="120.0" text="நியூ கிசடொமெர்" />
+    <Button layoutX="197.0" layoutY="201.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="133.00009999999747" text="Customer Search" />
+    <Button layoutX="372.0" layoutY="201.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="148.0" text="Customer Billing" />
+    <Button layoutX="551.0" layoutY="201.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" text="Employee/PayRoll" />
+    <Label layoutX="345.0" layoutY="256.0" text="Label" />
+    <Label fx:id="labelMessage" layoutX="161.0" layoutY="297.0" prefWidth="120.0" text="" />
+  </children>
+</AnchorPane>

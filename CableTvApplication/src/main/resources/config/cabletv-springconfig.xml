@@ -1,0 +1,39 @@
+<!--Common spring config for cabletv application
+
+@Kumaran
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   http://cxf.apache.org/jaxrs                   http://cxf.apache.org/schemas/jaxrs.xsd
+        http://cxf.apache.org/core                    http://cxf.apache.org/schemas/core.xsd"
+>
+
+    
+    
+    <context:component-scan base-package="com.cabletv.app.*"/>
+
+     <context:annotation-config/>
+     
+	<bean id="testSpr" class="com.cabletv.app.models.TestSpring">
+            <property name="testSpring" value="Kumaraneere"/>
+        </bean>
+		
+                
+                <jaxrs:client id="customerService" 
+              serviceClass="com.cabletv.app.service.api.CustomerService"
+              address="http://localhost:8080/CableTvServiceApp/customerServiceRest/custapp/getcustall">
+                   
+    <jaxrs:providers>
+        <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+       </jaxrs:providers>
+</jaxrs:client>
+ 
+                
+</beans>
